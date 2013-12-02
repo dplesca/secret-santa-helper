@@ -3,7 +3,8 @@
 		"twig/twig": "v1.14.2",
 		"klein/klein": "v2.0.2",
 		"swiftmailer/swiftmailer": "v5.0.2",
-		"monolog/monolog": "1.7.0"
+		"monolog/monolog": "1.7.0",
+		"symfony/yaml": "2.4.*@dev"
 	},
 	"autoload": {
       "classmap": [
