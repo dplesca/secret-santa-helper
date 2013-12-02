@@ -1,0 +1,13 @@
+{
+	"require": {
+		"twig/twig": "v1.14.2",
+		"klein/klein": "v2.0.2",
+		"swiftmailer/swiftmailer": "v5.0.2",
+		"monolog/monolog": "1.7.0"
+	},
+	"autoload": {
+      "classmap": [
+        "src/"
+      ]
+    }
+}

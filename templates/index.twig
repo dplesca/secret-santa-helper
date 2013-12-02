@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajutorul lui Secret Santa</title>
+    <link rel="stylesheet" href="/css/foundation.css" />
+    <script src="/js/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Generator de emailuri pentru Secret Santa</h1>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="large-12 columns">
+      	<div class="panel">
+	        <h3>Esti ajutorul lui secret Santa!</h3>
+	        <p>Pentru a folosi tool-ul de mai jos te rugam uploadeaza un fisier csv cu doua campuri pe linie (nume, email).</p>
+	        <p>Toata lumea din fisier va avea distribuit cate o persoana in mod aleator. Nu exista reguli complicate, ci doar cadouri apreciate!</p>
+	        <form action="/upload" method="post" enctype="multipart/form-data" id="form">
+			  <fieldset>
+				<legend>Ajuta-l pe Mos Craciun</legend>
+			    <label>Fisier csv</label>
+		    	<input type="file" >
+		    	<button class="button success tiny" type="submit">Trimite fisierul</button>
+			  </fieldset>
+			</form>
+      	</div>
+      </div>
+    </div>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/vendor/jquery.form.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      $(function(){
+      	$('#form').ajaxForm();
+      });
+    </script>
+  </body>
+</html>
