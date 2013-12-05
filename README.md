@@ -1,7 +1,5 @@
-secret-santa-helper
-===================
-
 Secret santa helper
+===================
 
 ###Install
 - clone repo
